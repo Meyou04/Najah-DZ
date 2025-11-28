@@ -37,7 +37,7 @@ export const Hero: React.FC<HeroProps> = ({ t }) => {
         {/* CTA */}
         <div className="flex flex-col sm:flex-row justify-center items-center gap-4 animate-fade-in-up [animation-delay:600ms]">
           <a 
-            href="https://github.com/Meyou04/Najah-DZ/releases/download/V1.0/app-release.apk"
+            href="https://github.com/Meyou04/Najah-DZ/releases/download/V1.0/Najah-DZ.apk"
             className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary-600 rounded-full hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-600 hover:shadow-2xl hover:scale-105 active:scale-95 shadow-primary-500/50"
           >
             <Smartphone className="w-6 h-6 mr-2 rtl:mr-0 rtl:ml-2 group-hover:animate-bounce" />
