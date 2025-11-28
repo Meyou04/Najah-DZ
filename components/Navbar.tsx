@@ -1,5 +1,5 @@
 import React from 'react';
-import { Moon, Sun, Languages, GraduationCap } from 'lucide-react';
+import { Moon, Sun, Languages } from 'lucide-react';
 import { Language, Theme, Translation } from '../types';
 
 interface NavbarProps {
@@ -17,9 +17,11 @@ export const Navbar: React.FC<NavbarProps> = ({ t, theme, toggleTheme, toggleLan
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center cursor-pointer group">
-            <div className="w-10 h-10 bg-primary-600 rounded-xl flex items-center justify-center text-white mr-3 rtl:mr-0 rtl:ml-3 shadow-lg group-hover:scale-110 transition-transform">
-              <GraduationCap size={24} />
-            </div>
+            <img 
+              src="/icon-najah.png" 
+              alt="Najah DZ Logo" 
+              className="w-10 h-10 rounded-xl mr-3 rtl:mr-0 rtl:ml-3 shadow-lg group-hover:scale-110 transition-transform object-cover" 
+            />
             <span className="font-black text-2xl bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-primary-800 dark:from-primary-400 dark:to-primary-200">
               {t.logo}
             </span>

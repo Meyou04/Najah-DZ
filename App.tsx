@@ -16,10 +16,7 @@ function App() {
 
   const [theme, setTheme] = useState<Theme>(() => {
     const saved = localStorage.getItem('dzexams-theme');
-    // Check system preference if no saved theme
-    if (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
+    // Default strictly to light mode if no saved preference
     return (saved === 'light' || saved === 'dark') ? saved : 'light';
   });
 
