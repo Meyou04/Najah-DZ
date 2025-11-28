@@ -10,7 +10,7 @@ interface NavbarProps {
   toggleLang: () => void;
 }
 
-export const Navbar: React.FC<NavbarProps> = ({ t, theme, toggleTheme, lang, toggleLang }) => {
+export const Navbar: React.FC<NavbarProps> = ({ t, theme, toggleTheme, toggleLang }) => {
   return (
     <nav className="fixed w-full z-50 transition-all duration-300 bg-white/80 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
