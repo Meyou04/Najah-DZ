@@ -56,7 +56,7 @@ function App() {
       
       <main>
         <Hero t={t.hero} />
-        <Screenshots t={t.screenshots} />
+        <Screenshots t={t.screenshots} lang={lang} />
         <LevelsGrid t={t.levels} />
         <Features t={t.features} />
       </main>

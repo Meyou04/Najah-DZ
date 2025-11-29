@@ -1,11 +1,12 @@
 import React from 'react';
-import { Translation } from '../types';
+import { Translation, Language } from '../types';
 
 interface ScreenshotsProps {
   t: Translation['screenshots'];
+  lang: Language;
 }
 
-export const Screenshots: React.FC<ScreenshotsProps> = ({ t }) => {
+export const Screenshots: React.FC<ScreenshotsProps> = ({ t, lang }) => {
   // We duplicate the images to ensure a seamless loop
   const allImages = [...t.images, ...t.images];
 
@@ -25,13 +26,14 @@ export const Screenshots: React.FC<ScreenshotsProps> = ({ t }) => {
         </div>
 
         {/* Carousel Container */}
-        <div className="relative w-full overflow-hidden">
+        {/* We force dir="ltr" here to ensure the infinite scroll physics works predictably regardless of page direction */}
+        <div className="relative w-full overflow-hidden" dir="ltr">
           {/* 
               Marquee Content 
-              animate-scroll moves the content from 0 to -50% width.
-              The content width is 2x the images list, so -50% brings us back to the start visually.
+              If lang is 'ar', we reverse the scroll direction to match natural reading flow.
+              Using scroll-reverse ensures we scan the content from -50% to 0, which works perfectly with the LTR layout.
           */}
-          <div className="flex w-max animate-scroll hover:[animation-play-state:paused]">
+          <div className={`flex w-max hover:[animation-play-state:paused] ${lang === 'ar' ? 'animate-scroll-reverse' : 'animate-scroll'}`}>
             {allImages.map((imgSrc, index) => (
               <div 
                 key={index} 
