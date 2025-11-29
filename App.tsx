@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { Screenshots } from './components/Screenshots';
@@ -62,6 +63,7 @@ function App() {
       </main>
 
       <Footer t={t.footer} />
+      <Analytics />
     </div>
   );
 }
