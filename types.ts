@@ -12,6 +12,11 @@ export interface Translation {
     cta: string;
     badge: string;
   };
+  screenshots: {
+    title: string;
+    subtitle: string;
+    images: string[];
+  };
   levels: {
     title: string;
     items: {

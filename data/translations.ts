@@ -12,6 +12,17 @@ export const translations: Record<string, Translation> = {
       cta: 'Télécharger l\'APK',
       badge: 'Application Gratuite',
     },
+    screenshots: {
+      title: 'Découvrez l\'Interface',
+      subtitle: 'Une application moderne et intuitive conçue pour faciliter vos révisions.',
+      images: [
+        '/accueille-tlfn-FR.png',
+        '/Années-TLFN-FR.png',
+        '/filliere-du-bac TLFN-FR.png',
+        '/sujets-TLFN-FR.png',
+        '/themes-TLFN-FR.png'
+      ]
+    },
     levels: {
       title: 'Choisis ton niveau',
       items: [
@@ -45,6 +56,17 @@ export const translations: Record<string, Translation> = {
       subheadline: 'احصل على آلاف المواضيع، الحلول، والملخصات لشهادة التعليم المتوسط، البكالوريا وجميع سنوات الثانوي.',
       cta: 'تحميل التطبيق (APK)',
       badge: 'تطبيق مجاني',
+    },
+    screenshots: {
+      title: 'اكتشف واجهة التطبيق',
+      subtitle: 'تصميم عصري وسهل الاستخدام لمساعدتك في المراجعة.',
+      images: [
+        '/accueille-TLFN-AR.png',
+        '/années-TLFN-AR.png',
+        '/fillieres-TLFN-AR.png',
+        '/sombre-TLFN-AR.png',
+        '/sujets-TLFN-AR.png'
+      ]
     },
     levels: {
       title: 'اختر مستواك الدراسي',

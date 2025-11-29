@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { Screenshots } from './components/Screenshots';
 import { LevelsGrid } from './components/LevelsGrid';
 import { Features } from './components/Features';
 import { Footer } from './components/Footer';
@@ -55,6 +56,7 @@ function App() {
       
       <main>
         <Hero t={t.hero} />
+        <Screenshots t={t.screenshots} />
         <LevelsGrid t={t.levels} />
         <Features t={t.features} />
       </main>
